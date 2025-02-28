@@ -1,13 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>
-        No Figma file has been provided for this page. 
-    </h1>
-</body>
+    <!-- daisyui + tailwindcss -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-200">
+    <div class="w-[1200px] mx-auto py-10">
+      <!-- nav bar -->
+      <div class="navbar bg-base-100 rounded-lg p-3">
+        <div class="flex-1 gap-2">
+          <img src="/assets/logo.png" alt="" />
+          <a class="text-xl font-light"
+            >Dev<span class="font-bold">Board</span></a
+          >
+        </div>
+
+        <div
+          id="back-to-home"
+          class="form-control flex flex-row gap-2 bg-blue-700 py-2 px-3 rounded-md cursor-pointer"
+        >
+          <p id="font-bold" class="font-bold text-white">Back to desk</p>
+        </div>
+      </div>
+
+      <!-- blog -->
+      <h2 class="font-extrabold text-center m-4">Blog</h2>
+
+      <div class="full-ques-section flex flex-col gap-5">
+        <div class="bg-white rounded-lg">
+          <div class="ques">
+            <h2 class="p-3 font-bold">
+              Question-1: What are the different ways to select an element in
+              the DOM?
+            </h2>
+          </div>
+          <hr class="border-dashed border-1 border-[#e0e2e9]" />
+          <div class="ans">
+            <h2 class="p-3">
+              YYou can select DOM elements using methods like getElementById (by
+              ID), querySelector (first match), querySelectorAll (all matches),
+              getElementsByTagName (by tag), and getElementsByClassName (by
+              class). Each method serves different use cases based on the
+              target.
+            </h2>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg">
+          <div class="ques">
+            <h2 class="p-3 font-bold">
+              Question-2: What is the difference between innerHTML, innerText,
+              and textContent ?
+            </h2>
+          </div>
+          <hr class="border-dashed border-1 border-[#e0e2e9]" />
+          <div class="ans">
+            <h2 class="p-3">
+              innerHTML gets or sets HTML content, including tags. innerText
+              retrieves or sets visible text, respecting CSS styles like
+              display: none. textContent gets or sets all text, ignoring tags
+              and styles, and is faster than innerText.
+            </h2>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg">
+          <div class="ques">
+            <h2 class="p-3 font-bold">
+              Question-3: What is event delegation in the DOM?
+            </h2>
+          </div>
+          <hr class="border-dashed border-1 border-[#e0e2e9]" />
+          <div class="ans">
+            <h2 class="p-3">
+              Event delegation is a technique where a single event listener is
+              attached to a parent element, which handles events from child
+              elements via event bubbling. This improves efficiency, especially
+              for dynamically added elements.
+            </h2>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg">
+          <div class="ques">
+            <h2 class="p-3 font-bold">
+              Question-4: What is event bubbling in the DOM?
+            </h2>
+          </div>
+          <hr class="border-dashed border-1 border-[#e0e2e9]" />
+          <div class="ans">
+            <h2 class="p-3">
+              Event bubbling is a DOM event mechanism where an event starts from
+              the innermost element (target) and "bubbles up" to the outer
+              parent elements, triggering their event listeners along the way.
+              This allows multiple elements to respond to the same event.
+            </h2>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg">
+          <div class="ques">
+            <h2 class="p-3 font-bold">
+              Question-5: How do you create, add, and remove elements using
+              JavaScript?
+            </h2>
+          </div>
+          <hr class="border-dashed border-1 border-[#e0e2e9]" />
+          <div class="ans">
+            <h2 class="p-3">
+              To create, add, and remove elements using JavaScript, first create
+              an element with document.createElement("tagName"). To add the
+              element, use appendChild() or insertBefore() to insert it into a
+              parent element. To remove an element, use removeChild() to remove
+              it from its parent. These methods allow you to dynamically
+              manipulate the DOM.
+            </h2>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <script src="discover.js"></script>
+  </body>
 </html>

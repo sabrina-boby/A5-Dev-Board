@@ -64,3 +64,4 @@ for (let btn of buttons) {
       addedActivity.innerHTML = ``;
     });
 }
+
