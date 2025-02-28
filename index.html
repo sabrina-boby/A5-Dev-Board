@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- daisyui + tailwindcss -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body {
+        background-color: #f4f7ff;
+      }
+      .bg-small-card {
+        background: rgb(174, 185, 255);
+        background: linear-gradient(
+          322deg,
+          rgba(174, 185, 255, 1) 0%,
+          rgba(59, 86, 253, 1) 100%
+        );
+      }
+      .text-light-colour {
+        color: rgb(82, 82, 82);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-200">
+    <div class="w-[1200px] mx-auto py-10">
+      <!-- nav bar -->
+      <div class="navbar bg-base-100 rounded-lg p-3">
+        <div class="flex-1 gap-2">
+          <img src="/assets/logo.png" alt="" />
+          <a class="text-xl font-light"
+            >Dev<span class="font-bold">Board</span></a
+          >
+        </div>
+        <div class="flex-none gap-2">
+          <div
+            class="form-control flex flex-row gap-2 bg-gray-200 py-2 px-3 rounded-3xl"
+          >
+            <img src="/assets/checkbox.png" alt="" />
+            <p class="font-extrabold">23</p>
+          </div>
+          <div id="colour-cng-btn">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle avatar"
+            >
+              <div class="w-10 rounded-full bg-gray-200 p-2">
+                <img src="/assets/theme-btn.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- body -->
+      <div class="body-part-left grid gap-4 mt-3 grid-cols-4">
+        <div class="col-span-3 bg-white rounded-lg">
+          <div class="sm-card-section grid grid-cols-4 gap-3 p-3">
+            <div class="hero bg-base-200 rounded-lg">
+              <div class="hero-content flex-col lg:flex-row">
+                <div class="bg-white p-2 rounded-3xl">
+                  <img src="/assets/checkbox.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="text-nowrap">Task Assigned</h1>
+                  <p class="font-bold text-lg">05</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero col-span-2 bg-base-200 rounded-lg bg-small-card">
+              <div class="hero-content flex-col lg:flex-row">
+                <div>
+                  <img src="/assets/board.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="text-wrap w-44 text-white">
+                    Discover Something New Today!
+                  </h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero bg-base-200 rounded-lg">
+              <div class="hero-content flex-col lg:flex-row">
+                <div class="bg-white p-2 rounded-3xl">
+                  <img src="/assets/calender.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="text-nowrap">Wed,</h1>
+                  <p class="font-bold dynamic-date text-nowrap">Jul 28 2025</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="border-dashed border-1 border-[#e0e2e9]" />
+          <!-- big-card -->
+          <div
+            class="big-card-section grid grid-cols-3 gap-3 p-3 text-light-colour"
+          >
+            <div class="hero bg-base-200 rounded-lg p-1">
+              <div class="hero-content flex flex-col">
+                <div class="bg-white px-2 rounded flex self-start">
+                  <p>ShopEase</p>
+                </div>
+                <div class="flex self-start">
+                  <p class="font-bold text-lg">Fix Mobile Button Issue</p>
+                </div>
+                <div class="bg-white rounded flex self-start p-2">
+                  <p>Debug using Chrome DevTools, check for overlapping ..</p>
+                </div>
+                <hr class="border-dashed border-1 border-[#e0e2e9] w-full" />
+                <div class="flex justify-between w-full">
+                  <div>
+                    <h1>Deadline</h1>
+                    <p class="font-bold text-base text-nowrap">21 March 2025</p>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- === -->
+
+            <div class="hero bg-base-200 rounded-lg p-1">
+              <div class="hero-content flex flex-col">
+                <div class="bg-white px-2 rounded flex self-start">
+                  <p>ShopEase</p>
+                </div>
+                <div class="flex self-start">
+                  <p class="font-bold text-lg">Fix Mobile Button Issue</p>
+                </div>
+                <div class="bg-white rounded flex self-start p-2">
+                  <p>Debug using Chrome DevTools, check for overlapping ..</p>
+                </div>
+                <hr class="border-dashed border-1 border-[#e0e2e9] w-full" />
+                <div class="flex justify-between w-full">
+                  <div>
+                    <h1>Deadline</h1>
+                    <p class="font-bold text-base text-nowrap">21 March 2025</p>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero bg-base-200 rounded-lg p-1">
+              <div class="hero-content flex flex-col">
+                <div class="bg-white px-2 rounded flex self-start">
+                  <p>ShopEase</p>
+                </div>
+                <div class="flex self-start">
+                  <p class="font-bold text-lg">Fix Mobile Button Issue</p>
+                </div>
+                <div class="bg-white rounded flex self-start p-2">
+                  <p>Debug using Chrome DevTools, check for overlapping ..</p>
+                </div>
+                <hr class="border-dashed border-1 border-[#e0e2e9] w-full" />
+                <div class="flex justify-between w-full">
+                  <div>
+                    <h1>Deadline</h1>
+                    <p class="font-bold text-base text-nowrap">21 March 2025</p>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero bg-base-200 rounded-lg p-1">
+              <div class="hero-content flex flex-col">
+                <div class="bg-white px-2 rounded flex self-start">
+                  <p>ShopEase</p>
+                </div>
+                <div class="flex self-start">
+                  <p class="font-bold text-lg">Fix Mobile Button Issue</p>
+                </div>
+                <div class="bg-white rounded flex self-start p-2">
+                  <p>Debug using Chrome DevTools, check for overlapping ..</p>
+                </div>
+                <hr class="border-dashed border-1 border-[#e0e2e9] w-full" />
+                <div class="flex justify-between w-full">
+                  <div>
+                    <h1>Deadline</h1>
+                    <p class="font-bold text-base text-nowrap">21 March 2025</p>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero bg-base-200 rounded-lg p-1">
+              <div class="hero-content flex flex-col">
+                <div class="bg-white px-2 rounded flex self-start">
+                  <p>ShopEase</p>
+                </div>
+                <div class="flex self-start">
+                  <p class="font-bold text-lg">Fix Mobile Button Issue</p>
+                </div>
+                <div class="bg-white rounded flex self-start p-2">
+                  <p>Debug using Chrome DevTools, check for overlapping ..</p>
+                </div>
+                <hr class="border-dashed border-1 border-[#e0e2e9] w-full" />
+                <div class="flex justify-between w-full">
+                  <div>
+                    <h1>Deadline</h1>
+                    <p class="font-bold text-base text-nowrap">21 March 2025</p>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero bg-base-200 rounded-lg p-1">
+              <div class="hero-content flex flex-col">
+                <div class="bg-white px-2 rounded flex self-start">
+                  <p>ShopEase</p>
+                </div>
+                <div class="flex self-start">
+                  <p class="font-bold text-lg">Fix Mobile Button Issue</p>
+                </div>
+                <div class="bg-white rounded flex self-start p-2">
+                  <p>Debug using Chrome DevTools, check for overlapping ..</p>
+                </div>
+                <hr class="border-dashed border-1 border-[#e0e2e9] w-full" />
+                <div class="flex justify-between w-full">
+                  <div>
+                    <h1>Deadline</h1>
+                    <p class="font-bold text-base text-nowrap">21 March 2025</p>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- === -->
+          </div>
+        </div>
+
+        <div class="body-part-right bg-white grid-cols-1 rounded-lg">
+          <div class="flex flex-col items-center p-4 ">
+            <div class="flex gap-2">
+              <img src="/assets/activity.png" alt="">
+              <p class="font-bold text-base text-nowrap">Activity Log</p>
+            </div>
+            <div class="mt-4">
+              <button class="btn btn-primary">Clear History</button>
+            </div>
+          </div>
+          <hr class="border-dashed border-1 border-[#e0e2e9] w-full" />
+          <div class="px-4 py-6 flex flex-col gap-5 text-light-colour">
+              <p class="bg-[#e0e2e9] p-3 rounded" >You have Complete The Task Add Dark Mode at 12:48:15 PM </p>
+              <!-- <p class="bg-[#e0e2e9] p-3 rounded" >You have Complete The Task Add Dark Mode at 12:48:15 PM </p>
+              <p class="bg-[#e0e2e9] p-3 rounded" >You have Complete The Task Add Dark Mode at 12:48:15 PM </p>
+              <p class="bg-[#e0e2e9] p-3 rounded" >You have Complete The Task Add Dark Mode at 12:48:15 PM </p>
+              <p class="bg-[#e0e2e9] p-3 rounded" >You have Complete The Task Add Dark Mode at 12:48:15 PM </p>
+              <p class="bg-[#e0e2e9] p-3 rounded" >You have Complete The Task Add Dark Mode at 12:48:15 PM </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
